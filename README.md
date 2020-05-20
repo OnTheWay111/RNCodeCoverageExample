@@ -1,7 +1,7 @@
 # RNCodeCoverageExample
 # RN代码覆盖率调研及实践
 ## 1、背景
-mini的opk使用React Native编写，为了多维度把控产品质量，特增加代码覆盖率统计纬度；
+新项目使用React Native编写，为了多维度把控产品质量，特增加代码覆盖率统计纬度；
 参考资料：横捷：https://testerhome.com/topics/8919
 美团：https://www.infoq.cn/article/UPfOuyQIkVr6708DNV4V
 ## 2、方案介绍
