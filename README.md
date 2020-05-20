@@ -75,7 +75,7 @@ npm index
 - 运行yarn android等待安装（这里有疑问的，看ReactNNative中文官方文档:https://reactnative.cn/docs/getting-started.html）
 - 安装成功后，如图：
 左图为手机，有图为reactNative控制台，图中可以看到打印的覆盖率回传log，以及每次回传的覆盖率对象；
-![image](http://github.com/itmyhome2013/readme_add_pic/raw/master/images/nongshalie.jpg)
+![image](https://github.com/OnTheWay111/RNCodeCoverageExample/blob/master/readme_pic/coverage.png)
 
 ## 4、注意
 因发现istanbul-middleware项目已经几年没有更新代码，且没有合并pull request，所以在自己的git把之前的pull request均合并了一下，所以建议package.json中配置更新后的istanbul-middleware。
@@ -88,7 +88,7 @@ npm index
 （2）【done】nyc插桩无效
   - 问题原因：nyc 需要14.1.1版本，结果在package.json配置npm install后，直接运行命令nyc，用的是全局nyc，并不是项目依赖包node_modules中的nyc。
   - 建议：在package.json中配置nyc的script，配置后，nyc使用的就是node_module下的nyc，而非全局nyc。配置如下图：
-![image](http://github.com/itmyhome2013/readme_add_pic/raw/master/images/nongshalie.jpg)
+![image](https://github.com/OnTheWay111/RNCodeCoverageExample/blob/master/readme_pic/nyc.png)
   - 问题描述及解决方法详见：https://testerhome.com/topics/23676
 
 （3）【待确认】istanbul-middleware覆盖率数据不准确
