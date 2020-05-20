@@ -12,7 +12,7 @@ mini的opk使用React Native编写，为了多维度把控产品质量，特增�
 ## 3、示例及代码说明
 ### 3.1 js覆盖率报告示例
 首先可以从图中看到，nyc提供的js代码覆盖率报告是从Branches(分支)、Functions(函数)、Lines(行)三个维度统计的。
-![image](http://github.com/itmyhome2013/readme_add_pic/raw/master/images/nongshalie.jpg)
+![image](https://github.com/OnTheWay111/RNCodeCoverageExample/blob/master/readme_pic/report.png)
 
 ### 3.2 代码示例
 RN代码覆盖率 示例代码见：https://github.com/OnTheWay111/RNCodeCoverageExample
@@ -25,8 +25,8 @@ RN代码覆盖率 示例代码见：https://github.com/OnTheWay111/RNCodeCoverag
 #### （1）代码结构介绍
 - index.js: 项目入口文件
 - package.json：项目依赖管理文件
-![image](http://github.com/itmyhome2013/readme_add_pic/raw/master/images/nongshalie.jpg)
-
+![image](https://github.com/OnTheWay111/RNCodeCoverageExample/blob/master/readme_pic/middleware.png)
+![image](https://github.com/OnTheWay111/RNCodeCoverageExample/blob/master/readme_pic/RNdemo.png)
 #### （2）JS插桩步骤
 ```shell script
 cd coverage_middleware  # 进入coverage_middleware项目目录
@@ -62,14 +62,14 @@ nyc instrument RNdemo ../RNdemo/js  # 将源码插桩后，放到../RNdemo/js
 
 至此，插桩完成。
 
-####（3）启动服务端项目
+#### （3）启动服务端项目
 ```shell script
 npm index
 ```
 启动成功如图所示：
-![image](http://github.com/itmyhome2013/readme_add_pic/raw/master/images/nongshalie.jpg)
+![image](https://github.com/OnTheWay111/RNCodeCoverageExample/blob/master/readme_pic/server_start.png)
 
-####（4）安装RNdemo到手机
+#### （4）安装RNdemo到手机
 - 确保手机连接电脑成功
 - 进入RNdemo目录, 运行npm install
 - 运行yarn android等待安装（这里有疑问的，看ReactNNative中文官方文档:https://reactnative.cn/docs/getting-started.html）
@@ -79,7 +79,7 @@ npm index
 
 ## 4、注意
 因发现istanbul-middleware项目已经几年没有更新代码，且没有合并pull request，所以在自己的git把之前的pull request均合并了一下，所以建议package.json中配置更新后的istanbul-middleware。
-![image](http://github.com/itmyhome2013/readme_add_pic/raw/master/images/nongshalie.jpg)
+![image](https://github.com/OnTheWay111/RNCodeCoverageExample/blob/master/readme_pic/notice.png)
 
 ## 5、踩坑记录
 （1）【done】react-native启动时红屏报错：Unable to load script.Make sure you're either running a metro server or that ....
