@@ -57,7 +57,7 @@ setInterval(function() {
 
 - 执行插桩
 ```shell script
-nyc instrument RNdemo ../RNdemo/js  # 将源码插桩后，放到../RNdemo/js
+nyc instrument --complete-copy RNdemo ../RNdemo/js  # 将源码插桩后，放到../RNdemo/js
 ```
 
 至此，插桩完成。
@@ -90,6 +90,14 @@ npm index
   - 建议：在package.json中配置nyc的script，配置后，nyc使用的就是node_module下的nyc，而非全局nyc。配置如下图：
 ![image](https://github.com/OnTheWay111/RNCodeCoverageExample/blob/master/readme_pic/nyc.png)
   - 问题描述及解决方法详见：https://testerhome.com/topics/23676
+  
+（3）插桩后丢文件
+nyc instrument 后发现有丢文件的现象，所以为了安全起见，还是加上完成copy的参数吧；
+```javascript
+nyc instrument --complete-copy [input] [output]
+```
+（4）含有装饰器的js无法插桩
+目前还未找到解决方法
 
-（3）【待确认】istanbul-middleware覆盖率数据不准确
+（5）【待确认】istanbul-middleware覆盖率数据不准确
 网友发现的问题，目前还没复现，回头等复杂项目验证后再出结论。

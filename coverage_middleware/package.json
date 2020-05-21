@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Test app for istanbul middleware with react-native",
   "scripts": {
-    "nyc": "nyc instrument"
+    "nyc": "nyc instrument --complete-copy"
   },
   "dependencies": {
     "body-parser": "~1.4.3",

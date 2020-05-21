@@ -80,11 +80,6 @@ function App(): ReactClass<{}> {
             <Button title="Button5" onPress={() => Alert.alert('Button5')}/>
             <Button title="Button6" onPress={() => Alert.alert('Button6')}/>
             <Button title="Button7" onPress={() => Alert.alert('Button7')}/>
-            <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-            <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-            <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-          <Image source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
-                 style={{width: 400, height: 400}} />
         </View>
       );
 }
