@@ -6,7 +6,7 @@
     "nyc": "nyc instrument --complete-copy"
   },
   "dependencies": {
-    "body-parser": "~1.4.3",
+    "body-parser": "~1.20.1",
     "core-util-is": "^1.0.2",
     "express": "4.x",
     "istanbul-middleware": "git+https://github.com/OnTheWay111/istanbul-middleware.git",
